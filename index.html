@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IBOMBO OKOUMOU Darwine Ruben — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">&lt;<span>IBOMBO</span>/&gt;</a>
+    <ul class="nav-links">
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#competences">Compétences</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#formation">Formation</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about"       onclick="closeMobile()">À propos</a>
+    <a href="#competences" onclick="closeMobile()">Compétences</a>
+    <a href="#projets"     onclick="closeMobile()">Projets</a>
+    <a href="#formation"   onclick="closeMobile()">Formation</a>
+    <a href="#contact"     onclick="closeMobile()">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Disponible pour des opportunités</div>
+      <h1 class="hero-name">
+        IBOMBO OKOUMOU<br>
+        <span class="highlight">Darwine Ruben</span>
+      </h1>
+      <p class="hero-title">
+        <span id="typed"></span><span class="typed-cursor">|</span>
+      </p>
+      <p class="hero-desc">
+        Passionné d'informatique, spécialisé en développement logiciel,
+        gestion de bases de données et réseaux. Je crée des solutions
+        digitales robustes et performantes.
+      </p>
+      <div class="hero-btns">
+        <a href="#projets" class="btn-primary"><i class="fas fa-rocket"></i> Voir mes projets</a>
+        <a href="#contact" class="btn-ghost"><i class="fas fa-paper-plane"></i> Me contacter</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section id="about">
+    <div class="section-wrap">
+      <div class="about-grid">
+        <div class="about-img-box">
+             <img src="img/Snapchat-990858655~2 (1) (1) (1) (1).jpg" alt="IBOMBO OKOUMOU Darwine Ruben" style="width:100%; height:150%; object-fit:cover; position:absolute; inset:0;"/>
+        </div>
+          <div class="about-badge-float">
+            <strong>+2</strong>
+            <span>Ans d'expérience</span>
+          </div>
+        </div>
+        <div class="about-text fade-up">
+          <p class="section-label">// À propos de moi</p>
+          <h2 class="section-title">Informaticien <span>passionné</span></h2>
+          <p>Je suis <strong>IBOMBO OKOUMOU Darwine Ruben</strong>, informaticien polyvalent avec une solide maîtrise du développement logiciel, du genie logitiel et de l'administration réseau.</p>
+          <p>Mon objectif est de concevoir des applications performantes et des architectures réseau robustes, en alliant rigueur technique et créativité.</p>
+          <div class="info-grid">
+            <div class="info-item"><i class="fas fa-map-marker-alt"></i> Congo / Brazzaville / kintele stade</div>
+            <div class="info-item"><i class="fas fa-envelope"></i> darwineibombo25@gmail.com</div>
+                <div class="info-item"><i class="fas fa-phone"></i>  064159718</div>
+            <div class="info-item"><i class="fas fa-graduation-cap"></i> Bac +3 Informatique</div>
+            <div class="info-item"><i class="fas fa-language"></i> Français / Anglais</div>
+          </div>
+          <div style="margin-top:2rem;">
+            <a href="#" class="btn-primary" style="font-size:.82rem; padding:.55rem 1.2rem;">
+              <i class="fas fa-download"></i> Télécharger CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <section id="competences">
+    <div class="section-wrap">
+      <p class="section-label fade-up">// Mes compétences</p>
+      <h2 class="section-title fade-up">Ce que je <span>maîtrise</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-card fade-up" style="--card-accent:#00d4ff;">
+          <div class="skill-card-icon"><i class="fas fa-code"></i></div>
+          <h3>Langages de Programmation</h3>
+          <div class="skill-bar-list">
+            <div class="skill-bar-item">
+              <label>Python <span>85%</span></label>
+              <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <label>Java <span>75%</span></label>
+              <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <label>C# <span>70%</span></label>
+              <div class="bar-track"><div class="bar-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <label>WinDev <span>65%</span></label>
+              <div class="bar-track"><div class="bar-fill" data-width="65"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card fade-up" style="--card-accent:#00ffaa;">
+          <div class="skill-card-icon" style="color:#00ffaa"><i class="fas fa-file-alt"></i></div>
+          <h3>Maîtrise Bureautique</h3>
+          <div class="skill-bar-list">
+            <div class="skill-bar-item">
+              <label>Microsoft Excel <span>90%</span></label>
+              <div class="bar-track"><div class="bar-fill" data-width="90" style="background:linear-gradient(90deg,#007a4a,#00ffaa)"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <label>PowerPoint <span>85%</span></label>
+              <div class="bar-track"><div class="bar-fill" data-width="85" style="background:linear-gradient(90deg,#007a4a,#00ffaa)"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <label>Microsoft Word <span>90%</span></label>
+              <div class="bar-track"><div class="bar-fill" data-width="90" style="background:linear-gradient(90deg,#007a4a,#00ffaa)"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <label>Access / Publisher <span>75%</span></label>
+              <div class="bar-track"><div class="bar-fill" data-width="75" style="background:linear-gradient(90deg,#007a4a,#00ffaa)"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card fade-up" style="--card-accent:#ff6b35;">
+          <div class="skill-card-icon" style="color:#ff6b35"><i class="fas fa-database"></i></div>
+          <h3>Gestion de Bases de Données</h3>
+          <div class="skill-tags">
+            <span class="skill-tag" style="color:#ff6b35;border-color:rgba(255,107,53,.25);background:rgba(255,107,53,.08)">MySQL</span>
+            <span class="skill-tag" style="color:#ff6b35;border-color:rgba(255,107,53,.25);background:rgba(255,107,53,.08)">PostgreSQL</span>
+            <span class="skill-tag" style="color:#ff6b35;border-color:rgba(255,107,53,.25);background:rgba(255,107,53,.08)">SQL Server</span>
+            <span class="skill-tag" style="color:#ff6b35;border-color:rgba(255,107,53,.25);background:rgba(255,107,53,.08)">Oracle</span>
+            <span class="skill-tag" style="color:#ff6b35;border-color:rgba(255,107,53,.25);background:rgba(255,107,53,.08)">Modélisation UML</span>
+            <span class="skill-tag" style="color:#ff6b35;border-color:rgba(255,107,53,.25);background:rgba(255,107,53,.08)">Merise / MCD</span>
+            <span class="skill-tag" style="color:#ff6b35;border-color:rgba(255,107,53,.25);background:rgba(255,107,53,.08)">SQL avancé</span>
+            <span class="skill-tag" style="color:#ff6b35;border-color:rgba(255,107,53,.25);background:rgba(255,107,53,.08)">NoSQL</span>
+          </div>
+        </div>
+
+        <div class="skill-card fade-up" style="--card-accent:#a78bfa;">
+          <div class="skill-card-icon" style="color:#a78bfa"><i class="fas fa-network-wired"></i></div>
+          <h3>Réseau — Cisco</h3>
+          <div class="skill-tags">
+            <span class="skill-tag" style="color:#a78bfa;border-color:rgba(167,139,250,.25);background:rgba(167,139,250,.08)">Cisco Packet Tracer</span>
+            <span class="skill-tag" style="color:#a78bfa;border-color:rgba(167,139,250,.25);background:rgba(167,139,250,.08)">Configuration routeurs</span>
+            <span class="skill-tag" style="color:#a78bfa;border-color:rgba(167,139,250,.25);background:rgba(167,139,250,.08)">Switches &amp; VLAN</span>
+            <span class="skill-tag" style="color:#a78bfa;border-color:rgba(167,139,250,.25);background:rgba(167,139,250,.08)">TCP/IP</span>
+            <span class="skill-tag" style="color:#a78bfa;border-color:rgba(167,139,250,.25);background:rgba(167,139,250,.08)">DHCP / DNS</span>
+            <span class="skill-tag" style="color:#a78bfa;border-color:rgba(167,139,250,.25);background:rgba(167,139,250,.08)">Sécurité réseau</span>
+            <span class="skill-tag" style="color:#a78bfa;border-color:rgba(167,139,250,.25);background:rgba(167,139,250,.08)">Modèle OSI</span>
+            <span class="skill-tag" style="color:#a78bfa;border-color:rgba(167,139,250,.25);background:rgba(167,139,250,.08)">VPN</span>
+          </div>
+        </div>
+
+        <div class="skill-card fade-up" style="--card-accent:#facc15;">
+          <div class="skill-card-icon" style="color:#facc15"><i class="fas fa-globe"></i></div>
+          <h3>Développement Web</h3>
+          <div class="skill-tags">
+            <span class="skill-tag" style="color:#facc15;border-color:rgba(250,204,21,.25);background:rgba(250,204,21,.08)">HTML5</span>
+            <span class="skill-tag" style="color:#facc15;border-color:rgba(250,204,21,.25);background:rgba(250,204,21,.08)">CSS3</span>
+            <span class="skill-tag" style="color:#facc15;border-color:rgba(250,204,21,.25);background:rgba(250,204,21,.08)">JavaScript</span>
+            <span class="skill-tag" style="color:#facc15;border-color:rgba(250,204,21,.25);background:rgba(250,204,21,.08)">PHP</span>
+            <span class="skill-tag" style="color:#facc15;border-color:rgba(250,204,21,.25);background:rgba(250,204,21,.08)">Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="skill-card fade-up" style="--card-accent:#f472b6;">
+          <div class="skill-card-icon" style="color:#f472b6"><i class="fas fa-brain"></i></div>
+          <h3>Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag" style="color:#f472b6;border-color:rgba(244,114,182,.25);background:rgba(244,114,182,.08)">Travail en équipe</span>
+            <span class="skill-tag" style="color:#f472b6;border-color:rgba(244,114,182,.25);background:rgba(244,114,182,.08)">Résolution de problèmes</span>
+            <span class="skill-tag" style="color:#f472b6;border-color:rgba(244,114,182,.25);background:rgba(244,114,182,.08)">Autonomie</span>
+            <span class="skill-tag" style="color:#f472b6;border-color:rgba(244,114,182,.25);background:rgba(244,114,182,.08)">Rigueur</span>
+            <span class="skill-tag" style="color:#f472b6;border-color:rgba(244,114,182,.25);background:rgba(244,114,182,.08)">Adaptabilité</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projets">
+    <div class="section-wrap">
+      <p class="section-label fade-up">// Mes projets</p>
+      <h2 class="section-title fade-up">Réalisations <span>récentes</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card fade-up">
+          <div class="project-thumb">🗄️</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">MySQL</span>
+            </div>
+            <h3>Système de gestion de stock</h3>
+            <p>Application desktop de gestion d'inventaire avec interface graphique, rapports Excel et base de données MySQL.</p>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Code source <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up">
+          <div class="project-thumb">🌐</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Cisco</span>
+              <span class="project-tag">VLAN</span>
+            </div>
+            <h3>Architecture réseau d'entreprise</h3>
+            <p>Simulation d'un réseau LAN/WAN avec VLAN, routage OSPF et sécurité sous Cisco Packet Tracer.</p>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-file-pdf"></i> Rapport <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up">
+          <div class="project-thumb">🏥</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">WinDev</span>
+              <span class="project-tag">SQL Server</span>
+            </div>
+            <h3>Application de gestion hospitalière</h3>
+            <p>Logiciel de gestion des patients, rendez-vous et ordonnances développé avec WinDev et SQL Server.</p>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Code source <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMATION -->
+  <section id="formation">
+    <div class="section-wrap">
+      <p class="section-label fade-up">// Mon parcours</p>
+      <h2 class="section-title fade-up">Formation &amp; <span>Expérience</span></h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <p class="timeline-date">2024 — 2027</p>
+          <h3>Licence en Informatique</h3>
+          <p class="school">🎓 Ecole Africaine de Developpementde EAD - Brazzaville — Congo</p>
+          <p>Spécialisation en développement logiciel, bases de données et réseaux. Mention Bien.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <p class="timeline-date">2027</p>
+          <h3>Certification Cisco — CCNA Introduction</h3>
+          <p class="school">🏅 Cisco Networking Academy</p>
+          <p>Fondamentaux des réseaux, configuration IOS, routage et commutation.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <p class="timeline-date">2026 — Présent</p>
+          <h3>Développeur Informatique Junior</h3>
+          <p class="school">💼 Stage / Freelance</p>
+          <p>Développement d'applications de gestion, maintenance de bases de données et support réseau.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <p class="timeline-date">2023</p>
+          <h3>Baccalauréat Scientifique</h3>
+          <p class="school">🎓 Lycée de la Revolution Brazzaville</p>
+          <p>Série Scientifique (D).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-wrap">
+      <p class="section-label fade-up">// Travaillons ensemble</p>
+      <h2 class="section-title fade-up">Me <span>contacter</span></h2>
+      <div class="contact-wrap">
+        <div class="fade-up contact-info">
+          <h3>Discutons de votre projet</h3>
+          <p>Que ce soit pour un projet de développement, une administration réseau ou une collaboration, n'hésitez pas à me contacter.</p>
+          <div class="contact-links">
+            <a href="mailto:darwine@email.com" class="contact-link"><i class="fas fa-envelope"></i> darwineibombo25@gmail.com</a>
+            <a href="tel:+242000000000"        class="contact-link"><i class="fas fa-phone"></i> +242 064159718</a>
+            <a href="#"                        class="contact-link"><i class="fab fa-linkedin"></i> linkedin.com/in/darwine-ibombo</a>
+            <a href="#"                        class="contact-link"><i class="fab fa-github"></i> github.com/darwine-ibombo</a>
+            <a href="#"                        class="contact-link"><i class="fas fa-map-marker-alt"></i> Brazzaville, Congo</a>
+          </div>
+        </div>
+        <div class="contact-form fade-up">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Prénom</label>
+              <input type="text" placeholder="Jean"/>
+            </div>
+            <div class="form-group">
+              <label>Nom</label>
+              <input type="text" placeholder="Dupont"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="jean@exemple.com"/>
+          </div>
+          <div class="form-group">
+            <label>Sujet</label>
+            <input type="text" placeholder="Proposition de projet..."/>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Décrivez votre projet ou votre demande..."></textarea>
+          </div>
+          <button class="btn-primary" onclick="sendMsg()" style="width:100%;justify-content:center;border:none;">
+            <i class="fas fa-paper-plane"></i> Envoyer le message
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Conçu &amp; développé par <span>IBOMBO OKOUMOU Darwine Ruben</span> &nbsp;|&nbsp; © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
