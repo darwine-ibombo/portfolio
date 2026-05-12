@@ -89,7 +89,7 @@
             <div class="info-item"><i class="fas fa-language"></i> Français / Anglais</div>
           </div>
           <div style="margin-top:2rem;">
-            <a href="#" class="btn-primary" style="font-size:.82rem; padding:.55rem 1.2rem;">
+            <a href="portfolio.pdf" download class="btn-primary" style="font-size:.82rem; padding:.55rem 1.2rem;">
               <i class="fas fa-download"></i> Télécharger CV
             </a>
           </div>
@@ -158,11 +158,9 @@
             <span class="skill-tag" style="color:#ff6b35;border-color:rgba(255,107,53,.25);background:rgba(255,107,53,.08)">MySQL</span>
             <span class="skill-tag" style="color:#ff6b35;border-color:rgba(255,107,53,.25);background:rgba(255,107,53,.08)">PostgreSQL</span>
             <span class="skill-tag" style="color:#ff6b35;border-color:rgba(255,107,53,.25);background:rgba(255,107,53,.08)">SQL Server</span>
-            <span class="skill-tag" style="color:#ff6b35;border-color:rgba(255,107,53,.25);background:rgba(255,107,53,.08)">Oracle</span>
             <span class="skill-tag" style="color:#ff6b35;border-color:rgba(255,107,53,.25);background:rgba(255,107,53,.08)">Modélisation UML</span>
             <span class="skill-tag" style="color:#ff6b35;border-color:rgba(255,107,53,.25);background:rgba(255,107,53,.08)">Merise / MCD</span>
             <span class="skill-tag" style="color:#ff6b35;border-color:rgba(255,107,53,.25);background:rgba(255,107,53,.08)">SQL avancé</span>
-            <span class="skill-tag" style="color:#ff6b35;border-color:rgba(255,107,53,.25);background:rgba(255,107,53,.08)">NoSQL</span>
           </div>
         </div>
 
@@ -189,8 +187,7 @@
             <span class="skill-tag" style="color:#facc15;border-color:rgba(250,204,21,.25);background:rgba(250,204,21,.08)">CSS3</span>
             <span class="skill-tag" style="color:#facc15;border-color:rgba(250,204,21,.25);background:rgba(250,204,21,.08)">JavaScript</span>
             <span class="skill-tag" style="color:#facc15;border-color:rgba(250,204,21,.25);background:rgba(250,204,21,.08)">PHP</span>
-            <span class="skill-tag" style="color:#facc15;border-color:rgba(250,204,21,.25);background:rgba(250,204,21,.08)">Bootstrap</span>
-          </div>
+            </div>
         </div>
 
         <div class="skill-card fade-up" style="--card-accent:#f472b6;">
@@ -250,7 +247,7 @@
           <div class="project-thumb">🏥</div>
           <div class="project-body">
             <div class="project-tags">
-              <span class="project-tag">WinDev</span>
+              <span class="project-tag">java</span>
               <span class="project-tag">SQL Server</span>
             </div>
             <h3>Application de gestion hospitalière</h3>
@@ -276,11 +273,11 @@
           <p class="timeline-date">2024 — 2027</p>
           <h3>Licence en Informatique</h3>
           <p class="school">🎓 Ecole Africaine de Developpementde EAD - Brazzaville — Congo</p>
-          <p>Spécialisation en développement logiciel, bases de données et réseaux. Mention Bien.</p>
+          <p>option genie logiciel et administration reseaux</p>
         </div>
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <p class="timeline-date">2027</p>
+          <p class="timeline-date">2028(pour bientot...)</p>
           <h3>Certification Cisco — CCNA Introduction</h3>
           <p class="school">🏅 Cisco Networking Academy</p>
           <p>Fondamentaux des réseaux, configuration IOS, routage et commutation.</p>
@@ -294,7 +291,7 @@
         </div>
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <p class="timeline-date">2023</p>
+          <p class="timeline-date">2024</p>
           <h3>Baccalauréat Scientifique</h3>
           <p class="school">🎓 Lycée de la Revolution Brazzaville</p>
           <p>Série Scientifique (D).</p>
@@ -320,33 +317,33 @@
             <a href="#"                        class="contact-link"><i class="fas fa-map-marker-alt"></i> Brazzaville, Congo</a>
           </div>
         </div>
-        <div class="contact-form fade-up">
+    <form action="https://formspree.io/f/mpqbbdaj" method="POST" class="contact-form">
           <div class="form-row">
             <div class="form-group">
               <label>Prénom</label>
-              <input type="text" placeholder="Jean"/>
+              <input type="text" name="prenom" placeholder="votre prenom" required/>
             </div>
             <div class="form-group">
               <label>Nom</label>
-              <input type="text" placeholder="Dupont"/>
+              <input type="text" name="nom" placeholder="votre nom" required/>
             </div>
-          </div>
-          <div class="form-group">
-            <label>Email</label>
-            <input type="email" placeholder="jean@exemple.com"/>
-          </div>
-          <div class="form-group">
-            <label>Sujet</label>
-            <input type="text" placeholder="Proposition de projet..."/>
-          </div>
-          <div class="form-group">
-            <label>Message</label>
-            <textarea placeholder="Décrivez votre projet ou votre demande..."></textarea>
-          </div>
-          <button class="btn-primary" onclick="sendMsg()" style="width:100%;justify-content:center;border:none;">
-            <i class="fas fa-paper-plane"></i> Envoyer le message
-          </button>
         </div>
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" name="email" placeholder="dada@exemple.com" required/>
+  </div>
+  <div class="form-group">
+    <label>Sujet</label>
+    <input type="text" name="sujet" placeholder="Proposition de projet..."/>
+  </div>
+  <div class="form-group">
+    <label>Message</label>
+    <textarea name="message" placeholder="Décrivez votre projet..."></textarea>
+  </div>
+  <button type="submit" class="btn-primary" style="width:100%;justify-content:center;border:none;">
+    <i class="fas fa-paper-plane"></i> Envoyer le message
+  </button>
+  </form>
       </div>
     </div>
   </section>
